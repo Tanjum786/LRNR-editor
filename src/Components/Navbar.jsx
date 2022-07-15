@@ -18,15 +18,15 @@ import {
 } from "@mui/material";
 import { useState } from "react";
 import {
-  DrawerAppBar,
   Search,
   SearchIconWrapper,
   StyledBadge,
   StyledInputBase,
 } from "./NavBar-componets";
+import { DrawerAppBar } from "./Drawer";
 
 export default function NavBar() {
-  const [mobileOpen, setMobileOpen] = useState(true);
+  const [mobileOpen, setMobileOpen] = useState(false);
 
   const [anchorEl, setAnchorEl] = useState(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = useState(null);
